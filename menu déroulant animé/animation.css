@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+}
+a {
+    z-index: 2;
+}
+p {
+    justify-content: center;
+    width: 60px;
+    z-index: 1;
+    display:flex; 
+    line-height: 4rem;
+    
+    transform: translateX(-60px);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+
+a:hover + p {
+    transform: translateX(0px);
+    background: rgb(173, 173, 173);
+} 
